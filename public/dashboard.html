@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <div class="flex min-h-screen">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white shadow-md p-6">
+      <h2 class="text-2xl font-bold mb-8 text-blue-600">Dashboard</h2>
+      <nav class="space-y-4">
+        <a href="#" class="block text-gray-700 hover:text-blue-600">🏠 Home</a>
+        <a href="#" class="block text-gray-700 hover:text-blue-600">👤 Profile</a>
+        <a href="#" class="block text-gray-700 hover:text-blue-600">📊 Analytics</a>
+        <a href="#" class="block text-gray-700 hover:text-blue-600">⚙️ Settings</a>
+        <a href="#" class="block text-red-500 hover:text-red-700">🚪 Logout</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+      <!-- Top Navbar -->
+      <header class="flex items-center justify-between mb-6">
+        <h1 class="text-3xl font-semibold">Welcome👋</h1>
+        <div class="flex items-center space-x-4">
+          <img src="https://i.pravatar.cc/40?img=3" alt="User" class="w-10 h-10 rounded-full">
+        </div>
+      </header>
+
+      <!-- Dashboard Cards -->
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h2 class="text-lg font-medium text-gray-700">📦 Orders</h2>
+          <p class="mt-2 text-2xl font-bold text-blue-600">128</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h2 class="text-lg font-medium text-gray-700">💬 Messages</h2>
+          <p class="mt-2 text-2xl font-bold text-green-600">52</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h2 class="text-lg font-medium text-gray-700">💰 Earnings</h2>
+          <p class="mt-2 text-2xl font-bold text-yellow-600">$1,240</p>
+        </div>
+      </section>
+
+      <!-- Recent Activity -->
+      <section class="mt-10 bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-4">Recent Activity</h2>
+        <ul class="space-y-3">
+          <li class="flex justify-between">
+            <span>✅ Order #456 completed</span>
+            <span class="text-sm text-gray-500">2 hrs ago</span>
+          </li>
+          <li class="flex justify-between">
+            <span>💬 Message from Jane</span>
+            <span class="text-sm text-gray-500">5 hrs ago</span>
+          </li>
+          <li class="flex justify-between">
+            <span>🔄 Profile updated</span>
+            <span class="text-sm text-gray-500">1 day ago</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>
