@@ -56,7 +56,7 @@
         if(error.code === 'auth/user-disabled'){
             alert('Your account has been disabled.')
         }
-
+ 
       })
     }
 
